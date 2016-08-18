@@ -1,0 +1,25 @@
+# Site configuration
+
+name: "Yo! Symfony"
+title: "Software design and development - Yo! Symfony"
+description: "We make high-quality PHP and JavaScript application using latest technologies like Symfony, Laravel and Drupal"
+author: "Yo! Symfony"
+locale: "en"
+
+header:
+  title: "We help your company build amazing things."
+  secundary: "We make high-quality PHP and JavaScript application using latest technologies like Symfony, Laravel and Drupal."
+
+# Page menus
+top_menu:
+  - { name: "Blog", url: "http://blog.yosymfony.com" }
+  - { name: "Our Services", url: "#services" }
+  - { name: "Products", url: "#products" }
+  - { name: "About", url: "#about" }
+  - { name: "Contact", url: "#contact" }
+
+social:
+  github: "https://github.com/yosymfony"
+  twitter: "yosymfony"
+  gplus: "https://plus.google.com/+Yosymfony"
+  youtube: "https://www.youtube.com/user/yosymfony"
