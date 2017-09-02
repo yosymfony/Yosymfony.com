@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Yo! Symfony web" default="build">
-    <property name="dir.deploy" value="../Yosymfony.com-rhcloud/" />
+    <property name="dir.deploy" value="../yosymfony.github.io" />
     <property name="cmd.spress" value="spress" />
     <property name="cmd.git" value="git" />
 
     <target name="build">
         <exec passthru="true" checkreturn="true" command="${cmd.spress} site:build"/>
-        <copy file="./src/content/.htaccess" todir="./build" overwrite="true"/>
     </target>
 
     <target name="deploy" depends="build-prod, clean-dir-deploy, copy-deploy-dir, deploy-git"/>
@@ -30,6 +29,6 @@
     </target>
 
     <target name="clean-dir-deploy">
-        <exec passthru="true" checkreturn="true" command="rm -rf *" dir="${dir.deploy}"/>
+        <delete dir="${dir.deploy}"/>
     </target>
 </project>
